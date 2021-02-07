@@ -14,6 +14,10 @@ The python scripts in this repo will:
 
 While the correlation is positive, at least according to the data, it is weak.
 
+Based on the different lunar phases returned in either; the py ephem or daniweb approach,for given dates in the sample:
+>The ephem based calc correlation coefficient returned is: 0.04125095348713485
+>The daniweb based function calc correlation coefficient returned is: 0.03474831585490815
+
 If not running on windows, change output files path on ~line 67: file_path = "C:/tempz/Moon Phase Crime Analysis"
 
 
