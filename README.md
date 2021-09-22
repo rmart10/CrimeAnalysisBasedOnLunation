@@ -5,7 +5,7 @@ After recently completing DataCamp's Python Programmer Track, I decided to put t
 The python scripts in this repo will:
 
 1. Download a copy of the source files from my google docs repo to:
-"C:/tempz/Moon Phase Crime Analysis" -- feel free to chnage on ~line 67
+"C:/tempz/Moon Phase Crime Analysis" -- feel free to change on ~line 67
 2. Read the complaint number, complaint dates from the data set into a pandas dataframe, by chunk, only keeping records from year 2013 and up (volume of crimes didnt seem reliable in years prior)
 3. Output that dataset.
 4. Using the minimized data set, load into a new pandas dataframe and aggregate crime volumes by date, stage those results into a staging data set.
