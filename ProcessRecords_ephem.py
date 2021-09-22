@@ -119,7 +119,7 @@ print("Iterating source data complete. Working file located in: " +file_path + "
                                                                                                     
 print("Reading working file into memory...")
 ######### 2. LOAD OUTPUT CSV INTO DF FOR AGGREGATION ANALYSIS
-dfComplaints = pd.read_csv(out_file,names=['CMPLNT_NUM','CMPLNT_FR_DT'])
+dfComplaints = pd.read_csv(file_path + "\\" + out_file,names=['CMPLNT_NUM','CMPLNT_FR_DT'])
 print("Reading working file into memory complete. Elapsed time:" + str(datetime.datetime.now() - start_time))
 ######### 3. INIT DF TO STORE AGGS
 dfCrimeVolumeByDate = dfComplaints[['CMPLNT_FR_DT']].copy()
@@ -174,7 +174,6 @@ print("Writing final output file showing count of crimes by date, along with moo
 dfStage.to_csv(file_path + "\\" + out_file_final)    
 print("Writing final output file complete.")
 print("Script end time:" + str(datetime.datetime.now() - start_time))
-
 
 
 
